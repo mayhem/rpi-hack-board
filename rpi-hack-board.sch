@@ -1,0 +1,475 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:ws2812b
+LIBS:tech-thing
+LIBS:mayhem-kicad-library
+LIBS:rpi-hack-board-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L GND #PWR?
+U 1 1 5A19D7C6
+P 9050 3150
+F 0 "#PWR?" H 9050 2900 50  0001 C CNN
+F 1 "GND" H 9050 3000 50  0000 C CNN
+F 2 "" H 9050 3150 50  0000 C CNN
+F 3 "" H 9050 3150 50  0000 C CNN
+	1    9050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 1600 9050 2400
+$Comp
+L TIP120 Q?
+U 1 1 5A19D7C7
+P 8950 2600
+F 0 "Q?" H 9200 2675 50  0000 L CNN
+F 1 "TIP120" H 9200 2600 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 9200 2525 50  0001 L CIN
+F 3 "" H 8950 2600 50  0000 L CNN
+	1    8950 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 5A19D7C8
+P 8250 2600
+F 0 "R?" V 8330 2600 50  0000 C CNN
+F 1 "1k" V 8250 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8180 2600 50  0001 C CNN
+F 3 "" H 8250 2600 50  0000 C CNN
+	1    8250 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8400 2600 8750 2600
+Wire Wire Line
+	6350 2550 5600 2550
+Wire Wire Line
+	6350 2450 5600 2450
+Wire Wire Line
+	6350 2350 5600 2350
+Wire Wire Line
+	6350 2250 5600 2250
+Text Label 5600 2250 0    60   ~ 0
+5V
+Text Label 5600 2550 0    60   ~ 0
+GND
+Text Label 5600 2350 0    60   ~ 0
+SDA
+Text Label 5600 2450 0    60   ~ 0
+SCL
+Wire Wire Line
+	1150 6550 1600 6550
+Wire Wire Line
+	2600 6950 3250 6950
+Text Label 3250 6950 2    60   ~ 0
+GND
+Text Label 3250 6550 2    60   ~ 0
+WS2812
+Text Label 1150 6550 0    60   ~ 0
+5V
+Text Label 9050 3150 0    60   ~ 0
+GND
+$Comp
+L C C?
+U 1 1 5A19D7CC
+P 1250 6800
+F 0 "C?" H 1275 6900 50  0000 L CNN
+F 1 "100nF" H 1275 6700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1288 6650 50  0001 C CNN
+F 3 "" H 1250 6800 50  0000 C CNN
+	1    1250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A19D7CD
+P 1250 7150
+F 0 "#PWR?" H 1250 6900 50  0001 C CNN
+F 1 "GND" H 1250 7000 50  0000 C CNN
+F 2 "" H 1250 7150 50  0000 C CNN
+F 3 "" H 1250 7150 50  0000 C CNN
+	1    1250 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6650 1250 6550
+Connection ~ 1250 6550
+Wire Wire Line
+	1250 7150 1250 6950
+Wire Wire Line
+	6350 1900 5600 1900
+Wire Wire Line
+	6350 1800 5600 1800
+Wire Wire Line
+	6350 1700 5600 1700
+Wire Wire Line
+	6350 1600 5600 1600
+Text Label 5600 1600 0    60   ~ 0
+5V
+Text Label 5600 1900 0    60   ~ 0
+GND
+Text Label 5600 1700 0    60   ~ 0
+SDA
+Text Label 5600 1800 0    60   ~ 0
+SCL
+Wire Wire Line
+	9050 2800 9050 3150
+Text Label 9150 1500 0    60   ~ 0
+5V
+$Comp
+L Raspberry_Pi_2_3 J?
+U 1 1 5A19D7CE
+P 2550 2650
+F 0 "J?" H 3250 1400 50  0000 C CNN
+F 1 "Raspberry_Pi_2_3" H 2150 3550 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20_Pitch2.54mm" H 3550 3900 50  0001 C CNN
+F 3 "" H 2600 2500 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04 J?
+U 1 1 5A19D7D0
+P 6550 2350
+F 0 "J?" H 6550 2550 50  0000 C CNN
+F 1 "I2C_1" H 6550 2050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 2350 50  0001 C CNN
+F 3 "" H 6550 2350 50  0001 C CNN
+	1    6550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x04 J?
+U 1 1 5A19D7D1
+P 6550 1700
+F 0 "J?" H 6550 1900 50  0000 C CNN
+F 1 "I2C_0" H 6550 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 1700 50  0001 C CNN
+F 3 "" H 6550 1700 50  0001 C CNN
+	1    6550 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1500 9150 1500
+$Comp
+L Conn_01x03 J?
+U 1 1 5A19D7D5
+P 9800 1600
+F 0 "J?" H 9800 1800 50  0000 C CNN
+F 1 "LOAD" H 9800 1400 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 9800 1600 50  0001 C CNN
+F 3 "" H 9800 1600 50  0001 C CNN
+	1    9800 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1600 9050 1600
+$Comp
+L GND #PWR?
+U 1 1 5A19D7D7
+P 9400 1900
+F 0 "#PWR?" H 9400 1650 50  0001 C CNN
+F 1 "GND" H 9400 1750 50  0000 C CNN
+F 2 "" H 9400 1900 50  0000 C CNN
+F 3 "" H 9400 1900 50  0000 C CNN
+	1    9400 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 1700 9400 1700
+Wire Wire Line
+	9400 1700 9400 1900
+Wire Wire Line
+	8100 2600 7500 2600
+Text Label 7500 2600 0    60   ~ 0
+LOAD_DRV
+$Comp
+L Conn_01x02 J?
+U 1 1 5A19D7D9
+P 6550 2900
+F 0 "J?" H 6550 3000 50  0000 C CNN
+F 1 "PWR" H 6550 2700 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6550 2900 50  0001 C CNN
+F 3 "" H 6550 2900 50  0001 C CNN
+	1    6550 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 2900 5600 2900
+Wire Wire Line
+	6350 3000 5600 3000
+Text Label 5600 2900 0    60   ~ 0
+5V
+Text Label 5600 3000 0    60   ~ 0
+GND
+Wire Wire Line
+	3450 1750 4050 1750
+Wire Wire Line
+	3450 1850 4050 1850
+Wire Wire Line
+	2350 1350 2350 1000
+Wire Wire Line
+	2150 3950 2150 4200
+Wire Wire Line
+	2150 4200 2850 4200
+Wire Wire Line
+	2850 4200 2850 3950
+Wire Wire Line
+	2750 3950 2750 4200
+Connection ~ 2750 4200
+Wire Wire Line
+	2650 3950 2650 4200
+Connection ~ 2650 4200
+Wire Wire Line
+	2550 3950 2550 4200
+Connection ~ 2550 4200
+Wire Wire Line
+	2450 3950 2450 4200
+Connection ~ 2450 4200
+Wire Wire Line
+	2350 3950 2350 4200
+Connection ~ 2350 4200
+Wire Wire Line
+	2250 3950 2250 4200
+Connection ~ 2250 4200
+$Comp
+L GND #PWR?
+U 1 1 5A19D7DA
+P 2500 4450
+F 0 "#PWR?" H 2500 4200 50  0001 C CNN
+F 1 "GND" H 2500 4300 50  0000 C CNN
+F 2 "" H 2500 4450 50  0000 C CNN
+F 3 "" H 2500 4450 50  0000 C CNN
+	1    2500 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 4450 2500 4200
+Connection ~ 2500 4200
+Text Label 2500 4400 0    60   ~ 0
+GND
+Text Label 2350 1000 0    60   ~ 0
+5V
+Wire Wire Line
+	2450 1350 2450 1200
+Wire Wire Line
+	2450 1200 2350 1200
+Connection ~ 2350 1200
+Wire Wire Line
+	3450 2150 4050 2150
+Wire Wire Line
+	3450 2250 4050 2250
+Wire Wire Line
+	3450 3050 4050 3050
+Text Label 4050 2150 2    60   ~ 0
+LOAD_DRV
+Text Label 4050 1750 2    60   ~ 0
+SDA
+Text Label 4050 1850 2    60   ~ 0
+SCL
+Wire Wire Line
+	3450 3150 4050 3150
+$Comp
+L R R?
+U 1 1 5A19D8DC
+P 2800 6550
+F 0 "R?" V 2880 6550 50  0000 C CNN
+F 1 "330" V 2800 6550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2730 6550 50  0001 C CNN
+F 3 "" H 2800 6550 50  0000 C CNN
+	1    2800 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L WS2812B LED?
+U 1 1 5A19DF95
+P 2100 6750
+F 0 "LED?" H 2100 6350 60  0000 C CNN
+F 1 "WS2812B" H 2100 7150 60  0000 C CNN
+F 2 "" V 2050 6750 60  0000 C CNN
+F 3 "" V 2050 6750 60  0000 C CNN
+	1    2100 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L DS1307 U?
+U 1 1 5A19E6AF
+P 2150 5350
+F 0 "U?" H 2000 5100 60  0000 C CNN
+F 1 "DS1307" H 2150 5600 60  0000 C CNN
+F 2 "" H 2100 5350 60  0000 C CNN
+F 3 "" H 2100 5350 60  0000 C CNN
+	1    2150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 5400 2850 5400
+Wire Wire Line
+	2450 5500 2850 5500
+Wire Wire Line
+	2450 5200 3250 5200
+$Comp
+L CRYSTAL X?
+U 1 1 5A19E8DA
+P 1150 5200
+F 0 "X?" H 1150 5350 60  0000 C CNN
+F 1 "CRYSTAL" H 1150 5050 60  0000 C CNN
+F 2 "" H 1150 5200 60  0000 C CNN
+F 3 "" H 1150 5200 60  0000 C CNN
+	1    1150 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Battery_Cell BT?
+U 1 1 5A19EA6D
+P 1550 5400
+F 0 "BT?" H 1650 5500 50  0000 L CNN
+F 1 "Battery_Cell" H 1650 5400 50  0000 L CNN
+F 2 "" V 1550 5460 50  0001 C CNN
+F 3 "" V 1550 5460 50  0001 C CNN
+	1    1550 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 5200 1450 5200
+Wire Wire Line
+	1850 5300 1350 5300
+Wire Wire Line
+	1350 5300 1350 5400
+Wire Wire Line
+	1350 5400 850  5400
+Wire Wire Line
+	850  5400 850  5200
+Wire Wire Line
+	1750 5400 1850 5400
+Wire Wire Line
+	1850 5500 1450 5500
+Wire Wire Line
+	1450 5500 1450 5400
+Text Label 2850 5400 2    60   ~ 0
+SCL
+Text Label 2850 5500 2    60   ~ 0
+SDA
+$Comp
+L C C?
+U 1 1 5A19F233
+P 3250 5550
+F 0 "C?" H 3275 5650 50  0000 L CNN
+F 1 "100nF" H 3275 5450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 3288 5400 50  0001 C CNN
+F 3 "" H 3250 5550 50  0000 C CNN
+	1    3250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5A19F2C3
+P 3250 5850
+F 0 "#PWR?" H 3250 5600 50  0001 C CNN
+F 1 "GND" H 3250 5700 50  0000 C CNN
+F 2 "" H 3250 5850 50  0000 C CNN
+F 3 "" H 3250 5850 50  0000 C CNN
+	1    3250 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 5200 3250 5400
+Wire Wire Line
+	3250 5850 3250 5700
+Text Label 2850 5200 2    60   ~ 0
+5V
+Wire Wire Line
+	2950 6550 3250 6550
+Wire Wire Line
+	2600 6550 2650 6550
+Text Label 4050 3150 2    60   ~ 0
+WS2812
+Wire Wire Line
+	3450 2850 4050 2850
+Wire Wire Line
+	3450 2750 4050 2750
+Text Label 4050 2750 2    60   ~ 0
+DS_DI
+Text Label 4050 2850 2    60   ~ 0
+DS_CO
+$Comp
+L Conn_01x04 J?
+U 1 1 5A19FB86
+P 6550 3400
+F 0 "J?" H 6550 3600 50  0000 C CNN
+F 1 "AP102" H 6550 3100 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 3400 50  0001 C CNN
+F 3 "" H 6550 3400 50  0001 C CNN
+	1    6550 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3300 6350 3300
+Wire Wire Line
+	6350 3400 5600 3400
+Wire Wire Line
+	6350 3500 5600 3500
+Wire Wire Line
+	5000 3600 6350 3600
+Text Label 5600 3300 0    60   ~ 0
+5V
+Text Label 5600 3600 0    60   ~ 0
+GND
+Text Label 5600 3400 0    60   ~ 0
+DS_DI
+Text Label 5600 3500 0    60   ~ 0
+DS_CO
+$Comp
+L CP C?
+U 1 1 5A19FF5B
+P 5000 3450
+F 0 "C?" H 5025 3550 50  0000 L CNN
+F 1 "CP" H 5025 3350 50  0000 L CNN
+F 2 "" H 5038 3300 50  0001 C CNN
+F 3 "" H 5000 3450 50  0001 C CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
