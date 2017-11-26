@@ -1,4 +1,4 @@
-update=Saturday, November 25, 2017 'PMt' 06:07:45 PM
+update=Sunday, November 26, 2017 'AMt' 10:29:38 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,4 @@ LibName29=valves
 LibName30=WS2812B.pretty/Schematic-Symbol/ws2812b
 LibName31=tech-thing/library/tech-thing
 LibName32=mayhem-kicad-library/mayhem-kicad-library
+LibName33=kicadlibrary/open-project
