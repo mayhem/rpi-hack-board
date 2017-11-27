@@ -421,20 +421,9 @@ Wire Wire Line
 Wire Wire Line
 	3450 2750 4050 2750
 Text Label 4050 2750 2    60   ~ 0
-DS_DI
+MOSI
 Text Label 4050 2850 2    60   ~ 0
-DS_CO
-$Comp
-L Conn_01x04 J6
-U 1 1 5A19FB86
-P 6550 3400
-F 0 "J6" H 6550 3600 50  0000 C CNN
-F 1 "AP102" H 6550 3100 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 6550 3400 50  0001 C CNN
-F 3 "" H 6550 3400 50  0001 C CNN
-	1    6550 3400
-	1    0    0    -1  
-$EndComp
+SCLK
 Wire Wire Line
 	5000 3300 6350 3300
 Wire Wire Line
@@ -448,9 +437,9 @@ Text Label 5600 3300 0    60   ~ 0
 Text Label 5600 3600 0    60   ~ 0
 GND
 Text Label 5600 3400 0    60   ~ 0
-DS_DI
+MOSI
 Text Label 5600 3500 0    60   ~ 0
-DS_CO
+SCLK
 $Comp
 L CP C1
 U 1 1 5A19FF5B
@@ -475,4 +464,169 @@ F 3 "" V 1550 5460 50  0001 C CNN
 $EndComp
 Text Label 9400 1700 0    60   ~ 0
 GND
+$Comp
+L Conn_01x03 J7
+U 1 1 5A1ACB97
+P 6550 4000
+F 0 "J7" H 6550 4200 50  0000 C CNN
+F 1 "SERIAL" H 6550 3800 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 6550 4000 50  0001 C CNN
+F 3 "" H 6550 4000 50  0001 C CNN
+	1    6550 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4100 5600 4100
+Wire Wire Line
+	6350 4000 5600 4000
+Wire Wire Line
+	6350 3900 5600 3900
+Text Label 5600 4100 0    60   ~ 0
+GND
+Text Label 5600 3900 0    60   ~ 0
+RX
+Text Label 5600 4000 0    60   ~ 0
+TX
+Wire Wire Line
+	3450 3350 4050 3350
+Wire Wire Line
+	3450 3450 4050 3450
+Text Label 4050 3350 2    60   ~ 0
+TX
+Text Label 4050 3450 2    60   ~ 0
+RX
+$Comp
+L Conn_01x20 J8
+U 1 1 5A1AF0A8
+P 6550 5300
+F 0 "J8" H 6550 6300 50  0000 C CNN
+F 1 "BREAKOUTS" H 6550 4200 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x20_Pitch2.54mm" H 6550 5300 50  0001 C CNN
+F 3 "" H 6550 5300 50  0001 C CNN
+	1    6550 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 4400 5600 4400
+Wire Wire Line
+	6350 4600 5600 4600
+Wire Wire Line
+	6350 4700 5600 4700
+Wire Wire Line
+	6350 4800 5600 4800
+Wire Wire Line
+	6350 4900 5600 4900
+Wire Wire Line
+	6350 5000 5600 5000
+Wire Wire Line
+	6350 5100 5600 5100
+Wire Wire Line
+	6350 5200 5600 5200
+Wire Wire Line
+	6350 5300 5600 5300
+Wire Wire Line
+	6350 5400 5600 5400
+Wire Wire Line
+	6350 5500 5600 5500
+Wire Wire Line
+	6350 5600 5600 5600
+Wire Wire Line
+	6350 5700 5600 5700
+Wire Wire Line
+	6350 5800 5600 5800
+Wire Wire Line
+	6350 5900 5600 5900
+Wire Wire Line
+	6350 6000 5600 6000
+Wire Wire Line
+	6350 6100 5600 6100
+Wire Wire Line
+	6350 6200 5600 6200
+Wire Wire Line
+	6350 6300 5600 6300
+Wire Wire Line
+	6350 4500 5600 4500
+Text Label 5600 4400 0    60   ~ 0
+5V
+Text Label 5600 4500 0    60   ~ 0
+5V
+Text Label 5600 4600 0    60   ~ 0
+5V
+Wire Wire Line
+	2650 1350 2650 1000
+Text Label 2650 1000 0    60   ~ 0
+3.3V
+Text Label 5600 4700 0    60   ~ 0
+3.3V
+Text Label 5600 4800 0    60   ~ 0
+3.3V
+Text Label 5600 4900 0    60   ~ 0
+SDA
+Text Label 5600 5000 0    60   ~ 0
+SCL
+Text Label 5600 6300 0    60   ~ 0
+GND
+Text Label 5600 6200 0    60   ~ 0
+GND
+Text Label 5600 6100 0    60   ~ 0
+GND
+Text Label 5600 5100 0    60   ~ 0
+GPIO17
+Text Label 5600 5200 0    60   ~ 0
+GPIO27
+Text Label 5600 5300 0    60   ~ 0
+GPIO22
+Text Label 5600 5400 0    60   ~ 0
+MOSI
+Text Label 5600 5500 0    60   ~ 0
+MISO
+Text Label 5600 5600 0    60   ~ 0
+SCLK
+Text Label 5600 5800 0    60   ~ 0
+GPIO07
+Text Label 5600 5700 0    60   ~ 0
+GPIO08
+Text Label 5600 5900 0    60   ~ 0
+GPIO12
+Text Label 5600 6000 0    60   ~ 0
+GPIO6
+Wire Wire Line
+	1650 2050 1050 2050
+Wire Wire Line
+	1650 3050 1050 3050
+Wire Wire Line
+	1650 2550 1050 2550
+Wire Wire Line
+	3450 2650 4050 2650
+Wire Wire Line
+	3450 2550 4050 2550
+Wire Wire Line
+	3450 2450 4050 2450
+Text Label 4050 2450 2    60   ~ 0
+GPIO07
+Text Label 4050 2550 2    60   ~ 0
+GPIO08
+Text Label 4050 2650 2    60   ~ 0
+MISO
+Text Label 4050 3050 2    60   ~ 0
+GPIO12
+Text Label 4050 2250 2    60   ~ 0
+GPIO6
+Text Label 1050 2050 0    60   ~ 0
+GPIO17
+Text Label 1050 2550 0    60   ~ 0
+GPIO22
+Text Label 1050 3050 0    60   ~ 0
+GPIO27
+$Comp
+L Screw_Terminal_01x04 J6
+U 1 1 5A1B2865
+P 6550 3400
+F 0 "J6" H 6550 3600 50  0000 C CNN
+F 1 "AP102" H 6550 3100 50  0000 C CNN
+F 2 "" H 6550 3400 50  0001 C CNN
+F 3 "" H 6550 3400 50  0001 C CNN
+	1    6550 3400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
