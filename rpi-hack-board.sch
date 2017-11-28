@@ -282,8 +282,6 @@ Text Label 4050 1750 2    60   ~ 0
 SDA
 Text Label 4050 1850 2    60   ~ 0
 SCL
-Wire Wire Line
-	3450 3150 4050 3150
 $Comp
 L R R2
 U 1 1 5A19D8DC
@@ -386,7 +384,7 @@ Wire Wire Line
 	2950 6550 3250 6550
 Wire Wire Line
 	2600 6550 2650 6550
-Text Label 4050 3150 2    60   ~ 0
+Text Label 1050 2450 0    60   ~ 0
 WS2812
 Wire Wire Line
 	3450 2850 4050 2850
@@ -612,4 +610,6 @@ F 3 "" H 9800 1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1650 2950 1050 2950
+Wire Wire Line
+	1650 2450 1050 2450
 $EndSCHEMATC
